@@ -5,20 +5,56 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./assets/css/tailwind.css">
+  <link rel="stylesheet" href="./assets/css/styles.css">
   <title>Document</title>
 </head>
 <body>
   <section class="container mx-auto p-4">
-    <nav class="bg-indigo-500 flex justify-between">
-      <div class="flex">
-        <img src="./assets/img/logo.svg" alt="logo" class="text-black">
-        <button class="inline-flex">
-          <span>Product</span>
-          <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/> </svg>
+    <nav class="bg-yellow-400 grid grid-flow-col grid-cols-12 gap-4">
+      <div class="">
+        <button>
+          <a href="#">
+            <img src="./assets/img/logo.svg" alt="logo brand">
+          </a>
         </button>
       </div>
+      <div class="col-span-8">
+        <div class="dropdown inline-block relative">
+          <button class="bg-transparent text-gray-700 font-semibold py-2 px-4 rounded inline-flex items-center">
+            <span class="mr-1">Product</span>
+            <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/> </svg>
+          </button>
+          <ul class="dropdown-menu absolute hidden text-gray-700 pt-1">
+            <li class=""><a class="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#">One</a></li>
+            <li class=""><a class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#">Two</a></li>
+            <li class=""><a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#">Three is the magic number</a></li>
+          </ul>
+        </div>
+        <div class="dropdown inline-block relative">
+          <button class="bg-transparent text-gray-700 font-semibold py-2 px-4 rounded inline-flex items-center">
+            <span class="mr-1">Company</span>
+            <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/> </svg>
+          </button>
+          <ul class="dropdown-menu absolute hidden text-gray-700 pt-1">
+            <li class=""><a class="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#">One</a></li>
+            <li class=""><a class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#">Two</a></li>
+            <li class=""><a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#">Three is the magic number</a></li>
+          </ul>
+        </div>
+        <div class="dropdown inline-block relative">
+          <button class="bg-transparent text-gray-700 font-semibold py-2 px-4 rounded inline-flex items-center">
+            <span class="mr-1">Connect</span>
+            <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/> </svg>
+          </button>
+          <ul class="dropdown-menu absolute hidden text-gray-700 pt-1">
+            <li class=""><a class="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#">One</a></li>
+            <li class=""><a class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#">Two</a></li>
+            <li class=""><a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#">Three is the magic number</a></li>
+          </ul>
+        </div>
+      </div>
       <div>
-        kanan
+        right
       </div>
     </nav>
   </section>
